@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expandable Sidebar</title>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="menu-icon" onclick="toggleSidebar()">
+            &#9776;
+        </div>
+        <div class="title">VTU NOTES & STUDY MATERIALS</div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <div class="menu-item" data-label="Home">
+            <span class="icon">&#8962;</span>
+            <span class="icon-name">Home</span>
+        </div>
+        <div class="menu-item" data-label="Academic Information">
+            <span class="icon">&#128218;</span>
+            <span class="icon-name">Academic Information</span>
+        </div>
+        <div class="menu-item" data-label="Notes & Study Materials">
+            <span class="icon">&#128221;</span>
+            <span class="icon-name">Notes & Study Materials</span>
+        </div>
+        <div class="menu-item" data-label="About Us">
+            <span class="icon">&#128101;</span>
+            <span class="icon-name">About Us</span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Welcome to VTU Student Resources</h1>
+        <p>Your one-stop portal for all academic resources, information, and support. Whether you're looking for syllabus details, lecture notes, exam schedules, or study materials, we've got you covered. Explore our comprehensive database and make your academic journey smoother and more efficient.</p>
+
+        <div class="announcements">
+            <h2>Latest Announcements</h2>
+            <ul>
+                <li><strong>May 28, 2024:</strong> The exam schedule for the upcoming semester has been released. Check the <a href="#">Examinations</a> section for details.</li>
+                <li><strong>May 20, 2024:</strong> New model question papers are available in the <a href="#">Notes & Study Materials</a> section.</li>
+                <li><strong>May 10, 2024:</strong> Important deadline for course registration is June 1st. Visit the <a href="#">Academic Information</a> section for more information.</li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Academic Calendar</a></li>
+                <li><a href="#">Exam Schedule</a></li>
+                <li><a href="#">Lecture Notes</a></li>
+                <li><a href="#">Lab Manuals</a></li>
+                <li><a href="#">Model Question Papers</a></li>
+                <li><a href="#">Previous Year Question Papers</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

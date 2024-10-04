@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-icon {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 50px; /* Adjust based on the height of the top bar */
+    transition: width 0.3s;
+    overflow: visible; /* Ensure tooltips are not clipped */
+    z-index: 1001; /* Ensure sidebar and its contents are above other elements */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon {
+    font-size: 24px;
+    width: 40px;
+    text-align: center;
+}
+
+.icon-name {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1002; /* Ensure tooltips are above all other elements */
+    left: 60px; /* Position right of the icon */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-name::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px; /* Adjust arrow position */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.menu-item:hover .icon-name {
+    visibility: visible;
+    opacity: 1;
+}
+
+.content {
+    margin-top: 70px; /* Adjust based on the height of the top bar */
+    margin-left: 80px; /* Adjust this value to provide enough space for the sidebar */
+    padding: 20px;
+    z-index: 1; /* Ensure content is below the sidebar and tooltips */
+}
+
+.announcements, .quick-links {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

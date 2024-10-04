@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTU Notes</title>
+    <title>VTU Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <ink rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" type="image/x-icon" href="/images/v.png"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>src="script.js"</script>
+</head>
+<body>
+    <header>
+        
+        <div class="header-content">
+            <img src="images/v.png" alt="logo" height="50px" width="50px">
+            <div class="title">
+                <h1 class="title_name">VTU Notes</h1>
+            </div>
+            <div class="lable">
+            <a href="#news">Academic Information</a>
+            <a href="resource.html">Notes & Study Materials</a>
+            <a href="#about">About us</a>
+            <!-- <a id="logo" class="active" href="#home"></a> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="filter-section">
+            <h1>Find Your Resources</h1>
+            <form id="filter-form">
+                <label for="scheme">Scheme:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="2020">2020</option>
+                    <option value="2018">2018</option>
+                    <option value="2015">2015</option>
+                    <option value="2010">2010</option>
+                </select>
+                <label for="semester">Semester:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for="branch">Branch:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="CSE">Computer Science and Engineering</option>
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                </select>
+                <button type="submit">Filter</button>
+            </form>
+            <input type="text" id="search-bar" placeholder="Search...">
+        </div>
+        <div class="resource-list">
+            <!-- Resources will be displayed here after filtering/searching -->
+        </div>
+    </div>
+    
+      
+</body>
+</html>
